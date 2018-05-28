@@ -1,0 +1,32 @@
+{
+  "name": "kw-cli",
+  "version": "1.0.0",
+  "description": "Node 命令行前端自动构建发布系统",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "kw": "app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huyang2229/node-cli.git"
+  },
+  "keywords": [
+    "Node"
+  ],
+  "author": "william",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/huyang2229/node-cli/issues"
+  },
+  "homepage": "https://github.com/huyang2229/node-cli#readme",
+  "devDependencies": {
+    "commander": "^2.15.1",
+    "inquirer": "^5.2.0",
+    "node-ssh": "^5.1.1",
+    "ora": "^2.1.0",
+    "shelljs": "^0.8.2"
+  }
+}
