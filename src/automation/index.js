@@ -16,6 +16,7 @@ const serviceConfig = require('./config.service')
 // 字段字典
 const TEXTDATA = {
   'A': '世界杯项目',
+  'B': '世界杯管理后台项目',
   'DEV': '联调环境',
   'TEST': '测试环境',
   'true': '需要',
@@ -82,15 +83,15 @@ async function connectService (config) {
  */
 async function updateAndCompile (config, type) {
 	// 进入项目本地目录
-	shell.cd('~/Desktop/kuaiwan/world-cup')
+	shell.cd(config.localPath)
 	// 从远程代码库拉取最新代码
 	shell.exec('git pull')
 	if (type === 'DEV') {
 		log('联调环境编译开始')
-		shell.exec('cnpm run build-debug')
+		shell.exec(config.command)
 	} else {
 		log('测试 环境编译开始')
-		shell.exec('cnpm run build-test')
+		shell.exec(config.command)
 	}
 	log('编译完成')
 }
