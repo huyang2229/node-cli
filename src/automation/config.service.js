@@ -1,22 +1,13 @@
 // 联调环境服务器
 const serviceA = {
-	host: "47.106.37.187",
-	username: "root",
-	password: "CryptopuppysTest123"
 }
 
 // 测试环境服务器
 const serviceB = {
-	host: "52.83.214.129",
-	username: "worldcup",
-	privateKey: '/Users/William/.ssh/id_rsa'
 }
 
 // 线上正式环境服务器
 const serviceC = {
-	host: "13.229.202.26",
-	username: "centos",
-	privateKey: '/Users/William/.ssh/sin.pem'
 }
 
 module.exports = {
